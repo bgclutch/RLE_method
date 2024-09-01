@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "compressor.h"
+#include "../rle_method_h/compressor.h"
 
 const char* file_compressor(const char* file_read_name)
 {
-    FILE *file_read       = fopen(file_read_name, "r");
+    FILE* file_read       = fopen(file_read_name, "r");
 
-    FILE *file_compressed = fopen("file_compressed.txt", "w");
+    FILE* file_compressed = fopen("file_compressed.txt", "w");
 
     int counter = 1;
     int current_char = 0;

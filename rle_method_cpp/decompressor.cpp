@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "decompressor.h"
+#include "../rle_method_h/decompressor.h"
 
 const char* file_decompressor(const char* file_compressed_name)
 {

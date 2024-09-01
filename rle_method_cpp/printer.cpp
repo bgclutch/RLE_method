@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "printer.h"
+#include "../rle_method_h/printer.h"
 
 void file_printer(const char* file_decompressed)
 {
