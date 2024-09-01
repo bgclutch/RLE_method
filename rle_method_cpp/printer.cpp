@@ -18,3 +18,14 @@ void file_printer(const char* file_decompressed)
     if(fclose(file_print) != 0)
         printf("print file close error\n");    
 }
+
+void instruction()
+{
+    printf("This program can compress, decompress and print files,\n" 
+           "ASCII art, for example. Input in console <file_name.txt> and one of this commands:\n\n"
+           "\"--compress\" - for only compressing file\n"
+           "\"--decompress\" - for only decompressing your file\n"
+           "\"--decompress_and_print\" - for decompress and print your file\n"
+           "\"--print\" - for only print your file\n\n"
+           "hope you enjoy using it!\n");
+}

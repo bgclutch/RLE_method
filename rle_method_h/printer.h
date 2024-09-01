@@ -3,4 +3,6 @@
 
 void file_printer (const char* file_decompressed);
 
+void instruction();
+
 #endif //PRINTER_H_
