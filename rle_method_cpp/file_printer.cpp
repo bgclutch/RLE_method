@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#include "../rle_method_h/printer.h"
+#include "../rle_method_h/file_printer.h"
 
-void file_printer(const char* file_decompressed)
+void file_printer(const char** file_decompressed)
 {
     FILE* file_print = fopen(file_decompressed, "r");
 

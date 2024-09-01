@@ -1,7 +1,7 @@
 #ifndef STRUCT_H_
 #define STRUCT_H_
 
-struct Concole_Input_Parsing
+struct Console_Input_Parsing
 {
     const char* compressing;
     const char* decompressing;
