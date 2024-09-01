@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 
     if(argc > 1)
     {
+        assert(&argv[1] && "nullptr recieved file");
+
         const char* compressed_file   = {file_compressor(argv[1])};
 
         const char* file_decompressed = file_decompressor(compressed_file);

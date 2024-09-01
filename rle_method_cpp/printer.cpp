@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "../rle_method_h/printer.h"
 
 void file_printer(const char* file_decompressed)
 {
     FILE* file_print = fopen(file_decompressed, "r");
+
+    assert(file_print && "nullptr file print");
     
     int outp_char = 0;
 

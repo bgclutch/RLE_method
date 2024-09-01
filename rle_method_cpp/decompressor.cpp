@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "../rle_method_h/decompressor.h"
 
@@ -7,7 +8,11 @@ const char* file_decompressor(const char* file_compressed_name)
 {
     FILE* file_compressed   = fopen(file_compressed_name, "r");
 
+    assert(file_compressed && "nullptr file compressed");
+
     FILE* file_decompressed = fopen("file_decompressed.txt", "w");
+
+    assert(file_decompressed && "nullptr file decompressed");
 
     int num_char = 0;
     int decoded_char = 0;

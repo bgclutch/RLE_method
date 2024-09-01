@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "../rle_method_h/compressor.h"
 
@@ -7,7 +8,11 @@ const char* file_compressor(const char* file_read_name)
 {
     FILE* file_read       = fopen(file_read_name, "r");
 
+    assert(file_read && "nullptr file read");
+
     FILE* file_compressed = fopen("file_compressed.txt", "w");
+
+    assert(file_compressed && "nullptr file compressed");
 
     int counter = 1;
     int current_char = 0;
