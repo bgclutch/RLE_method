@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     printf("input file name with .txt extention in console and action with this file or input"
            "\"--help\" for instructions\n\n\n");
 
-    file_processing(argc, argv, local_commands);
+    file_processing(argc, &argv[0], local_commands);
 
     return 0;
 }
